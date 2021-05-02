@@ -1,10 +1,8 @@
 package config;
 
 import model.mail.Person;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -20,9 +18,9 @@ public class ConfigurationManager {
     private List<Person> witnessesToCC;
 
     public ConfigurationManager() throws IOException {
-        victims = loadAdressesFromFile("./config/victimes.utf8");
-        messages = loadMessagesFromFile("./config/messages.utf8");
-        loadProperties("./config/config.properties");
+        victims = loadAdressesFromFile("." + File.separator + "config" + File.separator + "victimes.utf8");
+        messages = loadMessagesFromFile("." + File.separator + "config" + File.separator + "messages.utf8");
+        loadProperties("." + File.separator + "config" + File.separator + "config.properties");
     }
 
     private void loadProperties(String fileName) throws IOException {
