@@ -11,11 +11,11 @@ Ce projet à pour but d'envoyer des mails pour prank des gens. Une application c
 
 ## Mode d'emploi de l'application
 
-- Cloner le projet ce trouvant ici : https://github.com/Otabiel/SMTP.
+- Cloner le projet courant : https://github.com/Otabiel/SMTP.
 
-- Lancer le serveur SMTP MockMock si besoin ou utiliser un serveur SMTP existant.
+- Lancer le serveur SMTP MockMock si besoin, comme expliqué au ci-dessous, ou utiliser un serveur SMTP existant.
 
-- Modifier `MailRobot/config/config.properties` pour set le serveur SMTP et le nombre de groupe de personne victime du prank (3 personne minimum par groupe).
+- Modifier `MailRobot/config/config.properties` pour enregistrer les infos du serveur SMTP (par défaut configurer pour le serveur MockMock) et le nombre de groupe de personne victime du prank (3 personne minimum par groupe).
 
 - Modifier `MailRobot/config/messages.utf8` en utilisant la structure suivante :  Commencer par "Subject:" et séparer les messages par 3 underscore.
 
