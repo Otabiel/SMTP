@@ -93,5 +93,14 @@ public class ConfigurationManager {
     public int getNumberOfGroups() {
         return numberOfGroups;
     }
+
+    public int getSmtpServerPort() {
+        return smtpServerPort;
+    }
+
+    public String getSmtpServerAddress() {
+        return smtpServerAddress;
+    }
 }
+
 
