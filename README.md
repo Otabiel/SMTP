@@ -54,7 +54,7 @@ Si on veut le faire run sur d'autre numéro de port, il faut exécuter cette com
 
 ## Implémentation
 
-Nous nous sommes inspiré des vidéos d'Olivier Liechti afin de parvenir a ce résultat.
+Nous nous sommes inspiré des vidéos d'Olivier Liechti afin de parvenir a ce résultat. (https://www.youtube.com/watch?v=OrSdRCt_6YQ)
 
 Donc nous avons implémenté les trois packages suivants :
 
