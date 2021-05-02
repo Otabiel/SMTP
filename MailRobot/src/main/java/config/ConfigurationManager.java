@@ -29,7 +29,7 @@ public class ConfigurationManager {
         FileInputStream fis = new FileInputStream(fileName);
         Properties properties = new Properties();
         properties.load(fis);
-        smtpServerAddress = properties.getProperty("smtpServerAdress");
+        smtpServerAddress = properties.getProperty("smtpServerAddress");
         smtpServerPort = Integer.parseInt(properties.getProperty("smtpServerPort"));
         numberOfGroups = Integer.parseInt(properties.getProperty("numberOfGroups"));
         witnessesToCC = new ArrayList<>();
