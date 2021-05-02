@@ -11,7 +11,7 @@ Ce projet à pour but d'envoyer des mails pour prank des gens. Une application c
 
 ## Mode d'emploi de l'application
 
-- fork le projet ce trouvant ici : https://github.com/Otabiel/SMTP.
+- Cloner le projet ce trouvant ici : https://github.com/Otabiel/SMTP.
 
 - Lancer le serveur SMTP MockMock si besoin ou utiliser un serveur SMTP existant.
 
