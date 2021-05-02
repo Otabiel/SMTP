@@ -20,7 +20,7 @@ public class ConfigurationManager {
     private List<Person> witnessesToCC;
 
     public ConfigurationManager() throws IOException {
-        victims = loadAdressesFromFile("./config/victims.utf8");
+        victims = loadAdressesFromFile("./config/victimes.utf8");
         messages = loadMessagesFromFile("./config/messages.utf8");
         loadProperties("./config/config.properties");
     }
