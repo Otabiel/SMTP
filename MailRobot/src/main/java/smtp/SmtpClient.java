@@ -60,13 +60,15 @@ public class SmtpClient {
             LOG.info(line);
         }
 
-        for(String to : message.getCc()){
-            writer.write("Rcpt to:");
-            writer.write(to);
-            writer.write("\r\n");
-            writer.flush();
-            line = reader.readLine();
-            LOG.info(line);
+        if(message.getCc().length != 0) {
+            for (String to : message.getCc()) {
+                writer.write("Rcpt to:");
+                writer.write(to);
+                writer.write("\r\n");
+                writer.flush();
+                line = reader.readLine();
+                LOG.info(line);
+            }
         }
 
         for(String to : message.getBcc()){
@@ -92,11 +94,13 @@ public class SmtpClient {
         }
         writer.write("\r\n");
 
-        writer.write("Cc: " + message.getCc()[0]);
-        for (int i = 1; i < message.getCc().length; ++i){
-            writer.write(", " + message.getCc()[i]);
+        if(message.getCc().length != 0) {
+            writer.write("Cc: " + message.getCc()[0]);
+            for (int i = 1; i < message.getCc().length; ++i) {
+                writer.write(", " + message.getCc()[i]);
+            }
+            writer.write("\r\n");
         }
-        writer.write("\r\n");
 
         writer.flush();
 
