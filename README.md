@@ -48,6 +48,7 @@ Starting http server on port 8282
 [main] INFO org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8282
 ```
 > Si vous recontrez un conflit sur le port 8282, éditez le script `run.sh` afin de le changer.
+
 Ensuite lancer le programme comme illustrer au point précédent.
 
 ## Mise en place d'un serveur MockMock SMTP
