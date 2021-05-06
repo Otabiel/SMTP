@@ -38,7 +38,17 @@ Ce projet à pour but d'envoyer des mails pour prank des gens. Une application c
 
 - Lancer la commande suivant : `java -cp target/MailRobot-1.0-SNAPSHOT.jar MailRobot` pour exécuter le prank.
 
+## Lancement du serveur MockMock Dockerisé
 
+Lancez le script `build.sh` situé dans le dossier `Docker`. 
+Ensuite lancez le script `run.sh` et attendre que ceci appraisse dans votre terminal : 
+```
+Starting http server on port 8282
+[main] INFO org.eclipse.jetty.server.Server - jetty-8.1.8.v20121106
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8282
+```
+> Si vous recontrez un conflit sur le port 8282, éditez le script `run.sh` afin de le changer.
+Ensuite lancer le programme comme illustrer au point précédent.
 
 ## Mise en place d'un serveur MockMock SMTP
 
